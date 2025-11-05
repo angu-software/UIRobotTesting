@@ -7,11 +7,15 @@
 ## Overview
 UIRobotTesting is a Swift-based toolkit for writing robust, repeatable UI tests.
 
-
 ## Installation (Swift Package Manager)
 1. In Xcode: File > Add Packages…
 2. Enter repository URL: https://github.com/angu-software/UIRobotTesting
 3. Add the package to your test target(s)
+
+## Trusting contained macro
+
+UITestingRobot comes with a macro which you will need to be trusted first time you run our tests
+On CI you must also trust the macro. See xcodebuild option -skipMacroValidation.
 
 ## Getting Started
 1. Define a Screen Robot
@@ -22,8 +26,8 @@ UIRobotTesting is a Swift-based toolkit for writing robust, repeatable UI tests.
    - Enable headless simulators and collect artifacts (logs/screenshots).
 
 ### Example (conceptual)
-- LoginRobot: enter username, enter password, tap login  
-- HomeRobot: assert welcome message, navigate to feature  
+- LoginRobot: enter username, enter password, tap login
+- HomeRobot: assert welcome message, navigate to feature
 - Test: `LoginRobot().login(as: "user", password: "secret").then(HomeRobot.self).assertWelcome()`
 
 ## Best Practices
