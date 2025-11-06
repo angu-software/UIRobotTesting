@@ -8,7 +8,7 @@
 import SwiftSyntax
 import SwiftSyntaxMacros
 
-public struct SourceLocationMacro: ExpressionMacro {
+package struct SourceLocationMacro: ExpressionMacro {
     public static func expansion(of node: some FreestandingMacroExpansionSyntax,
                                  in context: some MacroExpansionContext) throws -> ExprSyntax {
         return "UIRobotTesting.SourceLocation.__here()"

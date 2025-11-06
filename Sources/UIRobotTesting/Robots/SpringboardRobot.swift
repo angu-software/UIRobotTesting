@@ -16,7 +16,8 @@ import XCTest
 ///   so interactions with it may differ from those within the app and can be more
 ///   prone to timing issues.
 ///
-/// ### Usual Purpose
+/// ## Usual Purpose
+///
 /// `SpringboardRobot` is typically used for:
 /// - Dismissing system permission prompts (e.g., Camera, Health, Notifications).
 /// - Handling the App Tracking Transparency (ATT) alert.

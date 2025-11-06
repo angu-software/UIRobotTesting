@@ -109,7 +109,7 @@ open class UIRobot {
         }
     }
 
-    /// Waits until the specified UI element becomes hittable (visible and interactable).
+    /// Waits until the specified UI element becomes hittable (visible and intractable).
     ///
     /// - Parameters:
     ///   - elementSpec: The specification of the UI element to resolve and observe.
@@ -162,7 +162,7 @@ open class UIRobot {
     /// - Important:
     ///   This method taps the element before typing. If tapping changes focus or triggers navigation,
     ///   ensure the element remains the intended target for text entry.
-    ///q
+    ///
     /// - SeeAlso:
     ///   - ``tap(_:checking:timeout:)``
     ///   - ``waitUntilHittable(_:timeout:)``
